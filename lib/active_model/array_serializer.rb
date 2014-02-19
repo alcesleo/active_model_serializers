@@ -22,7 +22,7 @@ module ActiveModel
       @each_serializer = options[:each_serializer]
       @resource_name   = options[:resource_name]
     end
-    attr_accessor :object, :scopem :root, :xml_root, :meta_key, :meta
+    attr_accessor :object, :scope, :root, :xml_root, :meta_key, :meta
 
     def root_key
       root || @resource_name
